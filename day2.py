@@ -14,7 +14,7 @@ for potential_password in password_list:
     password_policy_letter = password_policy[(
         potential_password.find(' ')+1):]
 
-    if (password[(password_policy_position1-1)] == password_policy_letter) is not (password[(password_policy_position2-1)] == password_policy_letter):
+    if (password[(password_policy_position1-1)] == password_policy_letter) != (password[(password_policy_position2-1)] == password_policy_letter):
         valid_passwords += 1
 
 print(valid_passwords)
